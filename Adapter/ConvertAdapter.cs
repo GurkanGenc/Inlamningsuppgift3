@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Assignment2.Adapter
 {
@@ -17,6 +13,7 @@ namespace Assignment2.Adapter
         {
             PrintingInts = printingInts;
         }
+
         public void GetString(ReturningStrings returningStrings)
         {
             var fetchedNumber = Int32.Parse(returningStrings.ReturnString());
