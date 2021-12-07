@@ -19,8 +19,9 @@ namespace Assignment2.Adapter
             // OBS TRASIG KOD - TA BORT NÄR DU BÖRJAR KODA
             // Det jag vill göra men inte kan är
             ReturningStrings returningStrings = new();
-            PrintingInts printingInts = new();
-            printingInts.Print(returningStrings.ReturnString());
+
+            IConvertAdapter convertAdapter = new ConvertAdapter();
+            convertAdapter.GetString(returningStrings);
         }
     }
 }
