@@ -6,14 +6,13 @@ using System.Threading.Tasks;
 
 namespace Assignment2.AbstractFactory
 {
-    class Cat
+    class Cat : IAnimal
     {
+        public string Name { get; set; }
+
         public Cat(string name)
         {
             Name = name;
         }
-
-        public string Name { get; set; }
-
     }
 }

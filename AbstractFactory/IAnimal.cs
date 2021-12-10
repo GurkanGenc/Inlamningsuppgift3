@@ -6,12 +6,8 @@ using System.Threading.Tasks;
 
 namespace Assignment2.AbstractFactory
 {
-    class Dog : IAnimal
+    public interface IAnimal
     {
-        public string Name { get; set; }
-        public Dog(string name)
-        {
-            Name = name;
-        }
+        string Name { get; set; }
     }
 }

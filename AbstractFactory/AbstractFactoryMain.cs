@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Assignment2.AbstractFactory
 {
@@ -13,7 +9,10 @@ namespace Assignment2.AbstractFactory
         
         public void Run()
         {
-
+            Console.WriteLine("Dog person or Cat person?");
+            var input = Console.ReadLine();
+            AnimalFactory animalFactory = new();
+            animalFactory.GetFactory(input);
         }
     }
 }
